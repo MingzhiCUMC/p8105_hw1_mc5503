@@ -1,6 +1,6 @@
 ---
 title: "p8105_hw1_mc5503.Rmd"
-author: "陈明志2019202282"
+author: "mc5503"
 date: "2023-09-18"
 output: github_document
 ---
@@ -11,5 +11,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(moderndive)
+library(tidyverse)
 data("early_january_weather")
+```
+# Problem 1
+### discribe the dataset
+```{r}
+early_january_weather
+nrow(early_january_weather)
+ncol(early_january_weather)
+mean(early_january_weather$temp)
+```
+
+### make plots
+```{r}
+plot_p1=ggplot(early_january_weather,
+       aes(x = time_hour,
+           y = temp,
+           color=humid)) + geom_point()
+plot_p1
+ggsave("plot_p1.png",plot_p1)
 ```
