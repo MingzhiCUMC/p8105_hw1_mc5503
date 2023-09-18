@@ -2,3 +2,5 @@
 HW1_DS
 
 create rmd file and library packages
+
+finish all the problems in HW1.
