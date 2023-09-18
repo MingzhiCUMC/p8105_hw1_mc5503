@@ -55,3 +55,12 @@ mean(vec_logical)
 mean(vec_char)
 mean(vec_factor)
 ```
+
+### convert variable types
+```{r,results='hide'}
+as.numeric(vec_logical)
+as.numeric(vec_char)
+as.numeric(vec_factor)
+```
+Only logical and factor variables can be converted to numeric type. 
+It's possible to take means only for the quantitative varibles.
