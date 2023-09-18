@@ -1,0 +1,15 @@
+---
+title: "p8105_hw1_mc5503.Rmd"
+author: "陈明志2019202282"
+date: "2023-09-18"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(moderndive)
+data("early_january_weather")
+```
