@@ -35,7 +35,7 @@ ggsave("plot_p1.png",plot_p1)
 
 # Problem 2
 ### create one dataframe and take the mean.
-```{r}
+```{r, warning=FALSE}
 # create the dataframe
 df_p2=tibble(
   vec_numeric=rnorm(10),
@@ -57,10 +57,10 @@ mean(vec_factor)
 ```
 
 ### convert variable types
-```{r,results='hide'}
+```{r,results='hide',warning=FALSE}
 as.numeric(vec_logical)
 as.numeric(vec_char)
 as.numeric(vec_factor)
 ```
 Only logical and factor variables can be converted to numeric type. 
-It's possible to take means only for the quantitative varibles.
+It's possible to take means only for the quantitative variables.
