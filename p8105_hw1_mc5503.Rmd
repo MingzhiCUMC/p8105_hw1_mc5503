@@ -59,7 +59,7 @@ mean(vec_logical)
 mean(vec_char)
 mean(vec_factor)
 ```
-
+Taking the mean doesn't work for character and factor variables. 
 ### convert variable types
 ```{r,results='hide',warning=FALSE}
 as.numeric(vec_logical)
