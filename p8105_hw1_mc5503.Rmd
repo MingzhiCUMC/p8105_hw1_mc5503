@@ -17,9 +17,13 @@ data("early_january_weather")
 # Problem 1
 ### discribe the dataset
 ```{r}
+# variables in the frame
 early_january_weather
+names(early_january_weather)
+# size
 nrow(early_january_weather)
 ncol(early_january_weather)
+# take the mean
 mean(early_january_weather$temp)
 ```
 
